@@ -29,6 +29,4 @@ public class Product {
     private String category;
     private String thumbnail;
 
-    @ManyToMany(mappedBy = "productSet", cascade = CascadeType.ALL)
-    private Set<Wishlist> wishlists = new HashSet<>();
 }
